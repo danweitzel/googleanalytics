@@ -14,7 +14,7 @@ library("googleAnalyticsR")
 library("tidyverse")
 library("lubridate")
 ```
-The `googleAnalyticsR` allows us to interact with the Google Analytics API and query our web traffic data. The `lubridate` package is used to handle dates and allows us to generate a seven day window for our query, and the `tidyverse` package is used to do some data wrangling. 
+The `googleAnalyticsR` package allows us to interact with the Google Analytics API and query our web traffic data. The `lubridate` package is used to handle dates and allows us to generate a seven day window for our query, and the `tidyverse` package is used to do some data wrangling. 
 
 ## Grant permission to access yout Google Account
 
