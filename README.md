@@ -2,6 +2,8 @@
 
 If you use Google Analytics to monitor your website traffic you probably have become a bit frustrated with the Google Analytics interface (both web and app). I find the website a bit sluggish and was looking for an easier way to get the information that I want from Google Analytics fast. After a bit of searching I found the `googleAnalyticsR` package in R. In this repository I explain how you can use R to very easily get reports on key metrics about the traffic of your website. 
 
+The entire R script to download is available [here](googleanalytics.R).
+
 ## Setting up Google Analytics 
 I assume that you have Google Analytics set up on your webpage already. If this is not the case here is a guide on how to do this: https://analytics.google.com/analytics/academy/course/6
 
