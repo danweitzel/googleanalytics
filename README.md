@@ -1,20 +1,20 @@
 # Use R to access your Google Analytics 
 
-If you use Google Analytics to monitor your website traffic you probably have become a bit frustrated with the Google Analytics interface (both web and app). I find the website a bit sluggish and was looking for an easier way to get the information that I want from Google Analytics fast. I looked around and found the `googleAnalyticsR` package in R. In this repository I explain how you can use R to very easily get reports on key metrics about the traffic of your website. 
+If you use Google Analytics to monitor your website traffic you probably have become a bit frustrated with the Google Analytics interface (both web and app). I find the website a bit sluggish and was looking for an easier way to get the information that I want from Google Analytics fast. After a bit of searching I found the `googleAnalyticsR` package in R. In this repository I explain how you can use R to very easily get reports on key metrics about the traffic of your website. 
 
 ## Setting up Google Analytics 
 I assume that you have Google Analytics set up on your webpage already. If this is not the case here is a guide on how to do this: https://analytics.google.com/analytics/academy/course/6
 
 ## Packages
 
-In order to query the data from Google Analytics, reduce the amount we collect and make a couple of easy data transformations we will use the following three packages. 
+In order to query the data from Google Analytics, reduce the amount of data wewe collect, and make a couple of easy data transformations we will use the following three R packages. 
 
 ```
 library("googleAnalyticsR")
 library("tidyverse")
 library("lubridate")
 ```
-The `googleAnalyticsR` allows us to interact with the Google Analytics API and query our data. The `lubridate` package is used to handle dates and allows us to generate a seven day window for our query, and the `tidyverse` package is used to do some data wrangling. 
+The `googleAnalyticsR` allows us to interact with the Google Analytics API and query our web traffic data. The `lubridate` package is used to handle dates and allows us to generate a seven day window for our query, and the `tidyverse` package is used to do some data wrangling. 
 
 ## Grant permission to access yout Google Account
 
@@ -40,7 +40,7 @@ account_list$viewId
 
 ##  Pick the viewId you want to extract data from
 
-The acocunt that I want to query is the second one. if You want to query the first account (or only have one account) replace the `[2]` with `[1]`.
+The acocunt that I want to query is the second one. If you want to query the first account (or only have one account) replace the `[2]` with `[1]`.
 
 ```
 ga_id <- account_list$viewId[2]
@@ -75,3 +75,8 @@ df_analytics <-
 ```
 df_analytics
 ```
+
+## Todos
+- add maps
+- other visualizations
+- better explanation
