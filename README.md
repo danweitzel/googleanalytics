@@ -7,7 +7,7 @@ I assume that you have Google Analytics set up on your webpage already. If this 
 
 ## Packages
 
-In order to query the data from Google Analytics, reduce the amount of data wewe collect, and make a couple of easy data transformations we will use the following three R packages. 
+In order to query the data from Google Analytics, reduce the amount of data we collect, and make a couple of easy data transformations we will use the following three R packages. 
 
 ```
 library("googleAnalyticsR")
