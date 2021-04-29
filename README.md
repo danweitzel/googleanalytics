@@ -30,7 +30,7 @@ You might have multiple Google Analytics accounts. The code below gives you the 
 ```
 account_list <- ga_account_list()
 ```
-## account_list will have a column called "viewId"
+## View account_list and see all monitored accounts
 
 In my case there are two accounts and I can get the `viewID` with the code below. With the ID number I can verify in the Google Analytics dashboard which account I want to query. 
 
@@ -38,7 +38,7 @@ In my case there are two accounts and I can get the `viewID` with the code below
 account_list$viewId
 ```
 
-## View account_list and pick the viewId you want to extract data from. 
+##  Pick the viewId you want to extract data from
 
 The acocunt that I want to query is the second one. if You want to query the first account (or only have one account) replace the `[2]` with `[1]`.
 
