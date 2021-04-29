@@ -1,7 +1,7 @@
 # Load Libraries
-library(googleAnalyticsR)
-library(tidyverse)
-library(lubridate)
+library("googleAnalyticsR")
+library("tidyverse")
+library("lubridate")
 
 
 # Authenticate with Google
