@@ -18,7 +18,7 @@ library("lubridate")
 ```
 The `googleAnalyticsR` package allows us to interact with the Google Analytics API and query our web traffic data. The `lubridate` package is used to handle dates and allows us to generate a seven day window for our query, and the `tidyverse` package is used to do some data wrangling. 
 
-## Grant permission to access yout Google Account
+## Grant permission to access your Google Account
 
 In order to be able to query from our Google Analytics account we must first grant a permission. We can do this with the following function. You will be promted to grant access after you run this in R. 
 
