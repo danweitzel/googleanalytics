@@ -100,6 +100,11 @@ df_analytics %>%
   theme_void() +
   coord_equal() 
   ```
+  
+  <p align="center">
+<img src="./map.jpeg" width="400">
+</p>
+
 
 ## Todos
 - other visualizations
