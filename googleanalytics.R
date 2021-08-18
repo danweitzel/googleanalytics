@@ -2,6 +2,7 @@
 library("googleAnalyticsR")
 library("tidyverse")
 library("lubridate")
+library("maps")
 
 
 # Authenticate with Google
@@ -33,3 +34,17 @@ df_analytics <-
                  
 # Look at the result of the traffic query
 df_analytics
+
+
+# Generate a world map
+df_analytics %>%
+  filter(longitude != "0.0000") %>% 
+  mutate(longitude = round(as.numeric(longitude), 2),
+         latitude = round(as.numeric(latitude), 2)) %>% 
+  ggplot() +
+  geom_point(aes(x=longitude, y=latitude, size=sessions, 
+                 fill=sessions, color=sessions), 
+             show.legend = FALSE) + 
+  borders("world") + 
+  theme_void() +
+  coord_equal() 
