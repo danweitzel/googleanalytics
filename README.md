@@ -2,12 +2,6 @@
 
 If you use Google Analytics to monitor your website traffic you probably have become frustrated with the Google Analytics interface (both web and app). I find the website sluggish and was looking for an easier way to get the information that I want from Google Analytics fast. After a bit of searching I found the `googleAnalyticsR` package in R. In this repository I explain how you can use R to very easily get reports on key metrics about the traffic of your website. 
 
-
-
-<p align="center">
-<img src="map.png" width="400">
-</p>
-
 <p align="center">
 <img src="/map.png" width="400">
 </p>
@@ -87,6 +81,25 @@ df_analytics <-
 ```
 df_analytics
 ```
+
+
+## Generate a world map
+
+We can also use the `maps` package to generate a world map of the traffic on the website. First we need to take care of two things. Some visitors receive 0's as latitude and longitude codes. We can drop those since they will be displayed as visitors several hundred miles off the coast of Ghana. Second, we need to make the latitude and longitude numeric and round it. After that we can plot with the code below:
+
+```
+df_analytics %>%
+  filter(longitude != "0.0000") %>% 
+  mutate(longitude = round(as.numeric(longitude), 2),
+         latitude = round(as.numeric(latitude), 2)) %>% 
+  ggplot() +
+  geom_point(aes(x=longitude, y=latitude, size=sessions, 
+                 fill=sessions, color=sessions), 
+             show.legend = FALSE) + 
+  borders("world") + 
+  theme_void() +
+  coord_equal() 
+  ```
 
 ## Todos
 - add maps
