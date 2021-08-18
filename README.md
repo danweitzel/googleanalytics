@@ -102,6 +102,5 @@ df_analytics %>%
   ```
 
 ## Todos
-- add maps
 - other visualizations
 - better explanation
