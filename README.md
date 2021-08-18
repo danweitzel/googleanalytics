@@ -3,7 +3,7 @@
 If you use Google Analytics to monitor your website traffic you probably have become frustrated with the Google Analytics interface (both web and app). I find the website sluggish and was looking for an easier way to get the information that I want from Google Analytics fast. After a bit of searching I found the `googleAnalyticsR` package in R. In this repository I explain how you can use R to very easily get reports on key metrics about the traffic of your website. 
 
 <p align="center">
-<img src="/map.png" width="400">
+<img src="/map.jpeg" width="400">
 </p>
 
 The entire R script to download is available [here](googleanalytics.R).
