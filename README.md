@@ -1,7 +1,7 @@
 # Use R to access your Google Analytics 
 
 <p align="center">
-<img src="map.png" width="600">
+<img src="https://raw.githubusercontent.com/danweitzel/googleanalytics/main/map.png" width="600">
 </p>
 
 
